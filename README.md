@@ -36,8 +36,8 @@ Author: Srinivasragavan Venkatasubramanian
 >### (optional )f wait allowed only during service window
 >>>>#### $`d_{i} \geq u_{i} + \mathcal{ServiceTime}_{i}  \hspace{10.5cm} \forall i \in \mathfrak{N}`$
 >>>>#### $`d_{i} \leq u_{i} + \mathcal{ServiceTime}_{i} + \mathcal{ServiceDuration}_{i} \hspace{7.3cm} \forall i \in \mathfrak{N}`$
->>>>#### $`d_{i} + \mathcal{TTime}_{i, j} \leq u_{j} + (1 - x_{i, j}) * BigM \hspace{10.2cm} \forall i,j \in \mathfrak{N}; i \ne j`$
->>>>#### $`d_{i} + \mathcal{TTime}_{i, j} \geq u_{j} - (1 - x_{i, j}) * BigM \hspace{10.2cm} \forall i,j \in \mathfrak{N}; i \ne j`$
+>>>>#### $`d_{i} + \mathcal{TTime}_{i, j} \leq u_{j} + (1 - x_{i, j}) * BigM \hspace{8.2cm} \forall i,j \in \mathfrak{N}; i \ne j`$
+>>>>#### $`d_{i} + \mathcal{TTime}_{i, j} \geq u_{j} - (1 - x_{i, j}) * BigM \hspace{8.2cm} \forall i,j \in \mathfrak{N}; i \ne j`$
 >### Tour start time variable constraints
 >>>>#### $`t_{i} \leq u_{i} - \mathcal{TTime}_{i, DEPOT} + (1 - x_{i, j}) * BigM \hspace{7.6cm} \forall i \in \mathfrak{N}`$
 >>>>#### $`t_{i} \geq u_{i} - \mathcal{TTime}_{i, DEPOT} - (1 - x_{i, j}) * BigM \hspace{7.6cm} \forall i \in \mathfrak{N}`$
