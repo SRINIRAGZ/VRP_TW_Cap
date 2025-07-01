@@ -1,0 +1,116 @@
+
+
+Solution:
+---------
+Total Graph Distance: 219.0 mi
+Num Vehicles Used: 6
+Objective: 219.0
+solve status: OPTIMAL
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Vehicle 1:
+----------
+Route (Nodes Visited)        :        0        ->       9        ->       24       ->       4        ->       25       ->       14       ->       22       ->       0        
+Service Time Window at node  :      (0, 0)     ->    (0, 180)    ->   (60, 300)    ->   (300, 480)   ->   (240, 360)   ->   (300, 360)   ->   (360, 480)   ->     (0, 0)     
+Times at Node (arr, dep, svc):   (0, 126, 0)   -> (137, 152, 15) -> (158, 177, 19) -> (300, 318, 18) -> (331, 341, 10) -> (348, 360, 12) -> (468, 480, 12) -> (486, inf, 0)  
+                                               |                 |                 |                 |                 |                 |                 |
+                                               v                 v                 v                 v                 v                 v                 v
+Travel Time                  :               10.8               6.0               6.0               6.0               7.2               8.4               6.0
+Vehicle Load (Accumulation)  :                  0                 3                 6                 9                12                16                18
+Travel Distance              :                9.0               5.0               5.0               5.0               6.0               7.0               5.0
+Total Tour Distance : 42.0
+Tour Start Time     : 126.0
+Tour End Time       : 486.0
+Total Tour Time     : 360.0
+Max Tour Load       : 18
+Tour Idle Time      : 223.6
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+Vehicle 2:
+----------
+Route (Nodes Visited)        :        0        ->       10       ->       17       ->       5        ->       7        ->       0        
+Service Time Window at node  :      (0, 0)     ->   (60, 120)    ->   (180, 300)   ->   (360, 420)   ->   (300, 420)   ->     (0, 0)     
+Times at Node (arr, dep, svc):    (0, 73, 0)   -> (88, 104, 16)  -> (282, 300, 18) -> (360, 379, 19) -> (406, 420, 14) -> (433, inf, 0)  
+                                               |                 |                 |                 |                 |
+                                               v                 v                 v                 v                 v
+Travel Time                  :               14.4               8.4               7.2               7.2              13.2
+Vehicle Load (Accumulation)  :                  0                 3                 6                12                17
+Travel Distance              :               12.0               7.0               6.0               6.0              11.0
+Total Tour Distance : 42.0
+Tour Start Time     : 73.2
+Tour End Time       : 433.2
+Total Tour Time     : 360.0
+Max Tour Load       : 17
+Tour Idle Time      : 242.6
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+Vehicle 3:
+----------
+Route (Nodes Visited)        :        0        ->       12       ->       1        ->       26       ->       18       ->       0        
+Service Time Window at node  :      (0, 0)     ->   (240, 300)   ->   (300, 360)   ->   (120, 360)   ->   (120, 360)   ->     (0, 0)     
+Times at Node (arr, dep, svc):   (0, 266, 0)   -> (272, 290, 18) -> (300, 320, 20) -> (326, 338, 12) -> (345, 359, 14) -> (368, inf, 0)  
+                                               |                 |                 |                 |                 |
+                                               v                 v                 v                 v                 v
+Travel Time                  :                6.0               9.6               6.0               7.2               8.4
+Vehicle Load (Accumulation)  :                  0                 6                 8                12                18
+Travel Distance              :                5.0               8.0               5.0               6.0               7.0
+Total Tour Distance : 31.0
+Tour Start Time     : 266.4
+Tour End Time       : 367.4
+Total Tour Time     : 101.0
+Max Tour Load       : 18
+Tour Idle Time      : 0.0
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+Vehicle 4:
+----------
+Route (Nodes Visited)        :        0        ->       16       ->       20       ->       6        ->       2        ->       0        
+Service Time Window at node  :      (0, 0)     ->   (120, 180)   ->   (300, 420)   ->   (360, 600)   ->   (300, 420)   ->     (0, 0)     
+Times at Node (arr, dep, svc):   (0, 113, 0)   -> (120, 133, 13) -> (360, 375, 15) -> (384, 400, 16) -> (407, 420, 13) -> (428, inf, 0)  
+                                               |                 |                 |                 |                 |
+                                               v                 v                 v                 v                 v
+Travel Time                  :                7.2               8.4               8.4               7.2               8.4
+Vehicle Load (Accumulation)  :                  1                 7                10                14                18
+Travel Distance              :                6.0               7.0               7.0               6.0               7.0
+Total Tour Distance : 33.0
+Tour Start Time     : 112.8
+Tour End Time       : 428.4
+Total Tour Time     : 315.6
+Max Tour Load       : 18
+Tour Idle Time      : 219.0
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+Vehicle 5:
+----------
+Route (Nodes Visited)        :        0        ->       21       ->       15       ->       11       ->       13       ->       0        
+Service Time Window at node  :      (0, 0)     ->   (300, 360)   ->   (240, 360)   ->   (300, 420)   ->   (240, 480)   ->     (0, 0)     
+Times at Node (arr, dep, svc):   (0, 309, 0)   -> (317, 336, 19) -> (342, 360, 18) -> (366, 382, 16) -> (465, 480, 15) -> (491, inf, 0)  
+                                               |                 |                 |                 |                 |
+                                               v                 v                 v                 v                 v
+Travel Time                  :                8.4               6.0               6.0               6.0              10.8
+Vehicle Load (Accumulation)  :                  3                 8                11                13                18
+Travel Distance              :                7.0               5.0               5.0               5.0               9.0
+Total Tour Distance : 31.0
+Tour Start Time     : 308.6
+Tour End Time       : 490.8
+Total Tour Time     : 182.2
+Max Tour Load       : 18
+Tour Idle Time      : 77.0
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+Vehicle 6:
+----------
+Route (Nodes Visited)        :        0        ->       23       ->       3        ->       19       ->       8        ->       0        
+Service Time Window at node  :      (0, 0)     ->   (120, 180)   ->   (180, 240)   ->   (360, 600)   ->   (360, 600)   ->     (0, 0)     
+Times at Node (arr, dep, svc):   (0, 154, 0)   -> (165, 180, 15) -> (224, 240, 16) -> (360, 370, 10) -> (478, 497, 19) -> (514, inf, 0)  
+                                               |                 |                 |                 |                 |
+                                               v                 v                 v                 v                 v
+Travel Time                  :               10.8               6.0               8.4               6.0              16.8
+Vehicle Load (Accumulation)  :                  0                 4                 9                11                17
+Travel Distance              :                9.0               5.0               7.0               5.0              14.0
+Total Tour Distance : 40.0
+Tour Start Time     : 154.2
+Tour End Time       : 513.8
+Total Tour Time     : 359.6
+Max Tour Load       : 17
+Tour Idle Time      : 251.6
