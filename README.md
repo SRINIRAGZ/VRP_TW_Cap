@@ -15,20 +15,20 @@ Author: Srinivasragavan Venkatasubramanian
 
 ## S.T
 >### Exit route arc constraints
->>>>#### $\displaystyle\sum\limits_{\substack{j \in \mathcal{N} \\ j \ne i}} x_{i, j} = 1 \hspace{14cm} \forall i \in \mathfrak{N}$
+>>>>#### $\displaystyle\sum\limits_{\substack{j \in \mathcal{N} \\ j \ne i}} x_{i, j} = 1 \hspace{12cm} \forall i \in \mathfrak{N}$
 >>>>#### $\displaystyle\sum\limits_{\substack{j \in \mathfrak{N} }} x_{DEPOT, j} \le |\mathcal{V}|$
 >### Enit route arc constraints
->>>>#### $\displaystyle\sum\limits_{\substack{i \in \mathcal{N} \\ j \ne i}} x_{i, j} = 1 \hspace{14cm} \forall j \in \mathfrak{N}$
+>>>>#### $\displaystyle\sum\limits_{\substack{i \in \mathcal{N} \\ j \ne i}} x_{i, j} = 1 \hspace{12cm} \forall j \in \mathfrak{N}$
 >>>>#### $\displaystyle\sum\limits_{\substack{j \in \mathfrak{N} }} x_{j, DEPOT} \le |\mathcal{V}|$
 >### Node Consistency
->>>>#### $\displaystyle\sum\limits_{\substack{i \in \mathcal{N} \\ h \ne i}} x_{i, h} - \displaystyle\sum\limits_{\substack{j \in \mathcal{N} \\ h \ne j}} x_{h, j} = 0 \hspace{12.5cm} \forall h \in \mathcal{N}$
+>>>>#### $\displaystyle\sum\limits_{\substack{i \in \mathcal{N} \\ h \ne i}} x_{i, h} - \displaystyle\sum\limits_{\substack{j \in \mathcal{N} \\ h \ne j}} x_{h, j} = 0 \hspace{10cm} \forall h \in \mathcal{N}$
 >### Demand Continuity
 >>>>#### $`c_{i, j} \leq \mathcal{Q} * x_{i, j} \hspace{14cm} \forall i,j \in \mathcal{N}; i \ne j`$
->>>>#### $`c_{i, j} \geq \mathcal{D}_{i} - (1 - x_{i, j}) * \mathcal{Q} \hspace{12.3cm}  \forall i,j \in \mathcal{N}; i \ne j`$
+>>>>#### $`c_{i, j} \geq \mathcal{D}_{i} - (1 - x_{i, j}) * \mathcal{Q} \hspace{10cm}  \forall i,j \in \mathcal{N}; i \ne j`$
 >>>>#### $`\displaystyle\sum\limits_{\substack{j \in \mathcal{N} \\ j \ne i}} c_{i, j} - \displaystyle\sum\limits_{\substack{j \in \mathcal{N} \\ j \ne i}} c_{j, i} = \mathfrak{D}_{i} \hspace{12.8cm} \forall i \in \mathfrak{N}`$
 >### Time Constraints
 >>>>#### $`u_{i} \geq \mathcal{Service\_Window\_Start}_{i} \hspace{11.5cm} \forall i \in \mathfrak{N}`$
->>>>#### $`u_{i} \leq \mathcal{ServiceWindowStart}_{i} + \mathcal{ServiceWindowDuration}_{i} - \mathcal{ServiceTime}_{i} \hspace{4.8cm} \forall i \in \mathfrak{N}`$
+>>>>#### $`u_{i} \leq \mathcal{ServiceWindowStart}_{i} + \mathcal{ServiceWindowDuration}_{i} - \mathcal{ServiceTime}_{i} \hspace{3.8cm} \forall i \in \mathfrak{N}`$
 >### Time Continuity
 >>>>#### $`u_{i} + \mathcal{ServiceTime}_{i} + \mathcal{TTime}_{i, j} - u_{j} \leq  (1 - x_{i, j}) * BigM \hspace{7.6cm} \forall i,j \in \mathfrak{N}; i \ne j`$
 >### (otional) if no wait times allowed during tour
