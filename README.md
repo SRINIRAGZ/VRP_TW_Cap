@@ -23,28 +23,28 @@ Author: Srinivasragavan Venkatasubramanian
 >### Node Consistency
 >>>>#### $\displaystyle\sum\limits_{\substack{i \in \mathcal{N} \\ h \ne i}} x_{i, h} - \displaystyle\sum\limits_{\substack{j \in \mathcal{N} \\ h \ne j}} x_{h, j} = 0 \hspace{10cm} \forall h \in \mathcal{N}$
 >### Demand Continuity
->>>>#### $`c_{i, j} \leq \mathcal{Q} * x_{i, j} \hspace{14cm} \forall i,j \in \mathcal{N}; i \ne j`$
+>>>>#### $`c_{i, j} \leq \mathcal{Q} * x_{i, j} \hspace{12cm} \forall i,j \in \mathcal{N}; i \ne j`$
 >>>>#### $`c_{i, j} \geq \mathcal{D}_{i} - (1 - x_{i, j}) * \mathcal{Q} \hspace{10cm}  \forall i,j \in \mathcal{N}; i \ne j`$
->>>>#### $`\displaystyle\sum\limits_{\substack{j \in \mathcal{N} \\ j \ne i}} c_{i, j} - \displaystyle\sum\limits_{\substack{j \in \mathcal{N} \\ j \ne i}} c_{j, i} = \mathfrak{D}_{i} \hspace{12.8cm} \forall i \in \mathfrak{N}`$
+>>>>#### $`\displaystyle\sum\limits_{\substack{j \in \mathcal{N} \\ j \ne i}} c_{i, j} - \displaystyle\sum\limits_{\substack{j \in \mathcal{N} \\ j \ne i}} c_{j, i} = \mathfrak{D}_{i} \hspace{10.8cm} \forall i \in \mathfrak{N}`$
 >### Time Constraints
 >>>>#### $`u_{i} \geq \mathcal{Service\_Window\_Start}_{i} \hspace{11.5cm} \forall i \in \mathfrak{N}`$
 >>>>#### $`u_{i} \leq \mathcal{ServiceWindowStart}_{i} + \mathcal{ServiceWindowDuration}_{i} - \mathcal{ServiceTime}_{i} \hspace{3.8cm} \forall i \in \mathfrak{N}`$
 >### Time Continuity
->>>>#### $`u_{i} + \mathcal{ServiceTime}_{i} + \mathcal{TTime}_{i, j} - u_{j} \leq  (1 - x_{i, j}) * BigM \hspace{7.6cm} \forall i,j \in \mathfrak{N}; i \ne j`$
+>>>>#### $`u_{i} + \mathcal{ServiceTime}_{i} + \mathcal{TTime}_{i, j} - u_{j} \leq  (1 - x_{i, j}) * BigM \hspace{5.6cm} \forall i,j \in \mathfrak{N}; i \ne j`$
 >### (otional) if no wait times allowed during tour
->>>>#### $`u_{i} + \mathcal{ServiceTime}_{i} + \mathcal{TTime}_{i, j} - u_{j} \geq  (x_{i, j} - 1) * BigM \hspace{7.6cm} \forall i,j \in \mathfrak{N}; i \ne j`$
+>>>>#### $`u_{i} + \mathcal{ServiceTime}_{i} + \mathcal{TTime}_{i, j} - u_{j} \geq  (x_{i, j} - 1) * BigM \hspace{5.6cm} \forall i,j \in \mathfrak{N}; i \ne j`$
 >### (optional )f wait allowed only during service window
->>>>#### $`d_{i} \geq u_{i} + \mathcal{ServiceTime}_{i}  \hspace{12.5cm} \forall i \in \mathfrak{N}`$
->>>>#### $`d_{i} \leq u_{i} + \mathcal{ServiceTime}_{i} + \mathcal{ServiceDuration}_{i} \hspace{9.3cm} \forall i \in \mathfrak{N}`$
+>>>>#### $`d_{i} \geq u_{i} + \mathcal{ServiceTime}_{i}  \hspace{10.5cm} \forall i \in \mathfrak{N}`$
+>>>>#### $`d_{i} \leq u_{i} + \mathcal{ServiceTime}_{i} + \mathcal{ServiceDuration}_{i} \hspace{7.3cm} \forall i \in \mathfrak{N}`$
 >>>>#### $`d_{i} + \mathcal{TTime}_{i, j} \leq u_{j} + (1 - x_{i, j}) * BigM \hspace{10.2cm} \forall i,j \in \mathfrak{N}; i \ne j`$
 >>>>#### $`d_{i} + \mathcal{TTime}_{i, j} \geq u_{j} - (1 - x_{i, j}) * BigM \hspace{10.2cm} \forall i,j \in \mathfrak{N}; i \ne j`$
 >### Tour start time variable constraints
->>>>#### $`t_{i} \leq u_{i} - \mathcal{TTime}_{i, DEPOT} + (1 - x_{i, j}) * BigM \hspace{9.6cm} \forall i \in \mathfrak{N}`$
->>>>#### $`t_{i} \geq u_{i} - \mathcal{TTime}_{i, DEPOT} - (1 - x_{i, j}) * BigM \hspace{9.6cm} \forall i \in \mathfrak{N}`$
->>>>#### $`t_{j} - t_{i} \leq (1 - x_{i, j}) * BigM \hspace{12.2cm} \forall i, j \in \mathfrak{N}; i \ne j`$
->>>>#### $`t_{i} - t_{j} \leq (1 - x_{i, j}) * BigM \hspace{12.2cm} \forall i, j \in \mathfrak{N}; i \ne j`$
+>>>>#### $`t_{i} \leq u_{i} - \mathcal{TTime}_{i, DEPOT} + (1 - x_{i, j}) * BigM \hspace{7.6cm} \forall i \in \mathfrak{N}`$
+>>>>#### $`t_{i} \geq u_{i} - \mathcal{TTime}_{i, DEPOT} - (1 - x_{i, j}) * BigM \hspace{7.6cm} \forall i \in \mathfrak{N}`$
+>>>>#### $`t_{j} - t_{i} \leq (1 - x_{i, j}) * BigM \hspace{10.2cm} \forall i, j \in \mathfrak{N}; i \ne j`$
+>>>>#### $`t_{i} - t_{j} \leq (1 - x_{i, j}) * BigM \hspace{10.2cm} \forall i, j \in \mathfrak{N}; i \ne j`$
 >### Time limit constraint
->>>>#### $`u_{i} + \mathcal{ServiceTime}_{i} + \mathcal{TTime}_{i, DEPOT} - t_{i} \leq \mathcal{T} \hspace{9.4cm} \forall i \in \mathfrak{N}`$
+>>>>#### $`u_{i} + \mathcal{ServiceTime}_{i} + \mathcal{TTime}_{i, DEPOT} - t_{i} \leq \mathcal{T} \hspace{7.4cm} \forall i \in \mathfrak{N}`$
 
 >>>>>>>>>>>>>#### $x_{i, j}$ binary -> route arc decision variable
 >>>>>>>>>>>>>#### $u_{i} \in \mathbb{R}^{+}$ -> service start time at node i
